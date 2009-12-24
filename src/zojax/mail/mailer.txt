@@ -1,0 +1,95 @@
+======
+Mailer
+======
+
+We can send IMessage objects through IMailer.sendmail method. All
+mailer configuration available in controlpanel's configlet 'settings.system.mail'
+
+
+  >>> from zope import interface, component
+  >>> from zope.interface import verify
+
+  >>> from zojax.mail.mailer import Mailer
+  >>> from zojax.mail.interfaces import IMailer
+  >>> from zojax.mail.tests import getEMails
+
+  >>> verify.verifyClass(IMailer, Mailer)
+  True
+
+  >>> mailer = component.getUtility(IMailer)
+  >>> verify.verifyObject(IMailer, mailer)
+  True
+
+
+We can use IMailDelivery.send method
+
+  >>> mailer.send('nikolay@zojax.net', ('fafhrd@zojax.net',), 'Test message')
+
+  >>> getEMails(True)
+  [('nikolay@zojax.net', ('fafhrd@zojax.net',), 'Test message')]
+
+We also can use IMailer.sendmail method, sendmail method accepts any
+context object, this object should be adaptable to IMessage interface.
+
+  >>> from zojax.mail import interfaces
+
+  >>> class Message(object):
+  ...     interface.implements(interfaces.IMessage)
+  ...     
+  ...     def __call__(self):
+  ...         return 'Test message 2'
+
+  >>> msg = Message()
+
+We should provide IDestinationAddress adapter for context.
+
+  >>> interface.alsoProvides(msg, interfaces.IDestinationAddress)
+  >>> msg.to_address = ('fafhrd@zojax.net',)
+
+  >>> mailer.sendmail(msg)
+  >>> getEMails(True)
+  [(u'Portal administrator <portal@zojax.net>', ('fafhrd@zojax.net',), 'Test message 2')]
+
+Be default 'from' address generated from IMailer.email_from_name and
+IMailer.email_from_address. We can override this.
+
+  >>> interface.alsoProvides(msg, interfaces.IFromAddress)
+  >>> msg.from_address = 'nikolay@zojax.net'
+
+  >>> mailer.sendmail(msg)
+
+  >>> getEMails(True)
+  [('nikolay@zojax.net', ('fafhrd@zojax.net',), 'Test message 2')]
+
+
+IMailDebugSettings
+------------------
+
+  >>> debug = component.getUtility(interfaces.IMailDebugSettings)
+
+We can disable mailer
+
+  >>> debug.disabled = True
+
+  >>> mailer.sendmail(msg)
+  >>> getEMails(True)
+  []
+
+Print destination emails and message to log file.
+
+  >>> debug.disabled = False
+  >>> debug.log_emails = True
+
+  >>> mailer.sendmail(msg)
+  >>> getEMails(True)
+  [('nikolay@zojax.net', ('fafhrd@zojax.net',), 'Test message 2')]
+
+No final delivery
+
+  >>> debug.disabled = False
+  >>> debug.log_emails = False
+  >>> debug.no_delivery = True
+
+  >>> mailer.sendmail(msg)
+  >>> getEMails(True)
+  []

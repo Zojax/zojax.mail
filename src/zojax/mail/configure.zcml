@@ -1,0 +1,41 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:i18n="http://namespaces.zope.org/i18n"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="zojax.mail">
+
+  <adapter factory=".default.DefaultFromAddress" />
+
+  <adapter factory=".default.DefaultErrorsAddress" />
+
+  <zojax:configlet
+     name="system.mail"
+     schema=".interfaces.IMailer"
+     class=".mailer.Mailer"
+     title="Mail settings"
+     description="Configure portal mail settings.">
+    <require
+       permission="zope.Public"
+       interface=".interfaces.IMailer" />
+  </zojax:configlet>
+
+  <zojax:configlet
+     name="system.mail.debug"
+     schema=".interfaces.IMailDebugSettings"
+     title="Debug settings"
+     description="Configure portal mail debug settings.">
+    <require
+       permission="zope.Public"
+       interface=".interfaces.IMailDebugSettings" />
+  </zojax:configlet>
+
+  <browser:icon
+     name="zmi_icon"
+     for=".interfaces.IMailer"
+     file="mail.png" />
+
+  <!-- translations -->
+  <i18n:registerTranslations directory="locales"/>
+
+</configure>

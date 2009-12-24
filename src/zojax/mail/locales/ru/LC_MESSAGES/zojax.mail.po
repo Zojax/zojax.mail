@@ -1,0 +1,121 @@
+##############################################################################
+#
+# Copyright (c) 2003-2004 Zope Corporation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Wed Oct 22 14:18:19 2008\n"
+"PO-Revision-Date: 2008-10-22 14:40+0600\n"
+"Last-Translator: Nikolay Kim <fafhrd91@gmail.com>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: src/zojax/mail/configure.zcml:13
+msgid "Mail settings"
+msgstr "Настройки почты"
+
+#: src/zojax/mail/configure.zcml:13
+msgid "Configure portal mail settings."
+msgstr "Настройки почты для этого сайта."
+
+#: src/zojax/mail/configure.zcml:24
+msgid "Debug settings"
+msgstr ""
+
+#: src/zojax/mail/configure.zcml:24
+msgid "Configure portal mail debug settings."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:100
+msgid "Password used for optional SMTP authentication."
+msgstr "Пароль для пользователя на SMTP сервере."
+
+#: src/zojax/mail/interfaces.py:105
+msgid "Site 'From' name"
+msgstr "Имя 'От кого' для этого сайта"
+
+#: src/zojax/mail/interfaces.py:106
+msgid "Portal generates e-mail using this name as the e-mail sender."
+msgstr "Сайт генерирует различные служебные электронные сообщения, используя это имя как отправителя."
+
+#: src/zojax/mail/interfaces.py:112
+msgid "Site 'From' address"
+msgstr "Адрес 'От кого' для этого сайта"
+
+#: src/zojax/mail/interfaces.py:113
+msgid "Portal generates e-mail using this address as the e-mail return address."
+msgstr "Сайт генерирует различные служебные электронные сообщения, используя этот адрес как обратный адрес."
+
+#: src/zojax/mail/interfaces.py:119
+msgid "Site 'Errors' address"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:120
+msgid "Portal generates e-mail using this address as the errors handler address."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:132
+msgid "Disabled"
+msgstr "Отключен"
+
+#: src/zojax/mail/interfaces.py:133
+msgid "Disable sending message."
+msgstr "Отключить доставку сообщений."
+
+#: src/zojax/mail/interfaces.py:137
+msgid "Log messages"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:138
+msgid "Log email address and message."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:142
+msgid "No delivery"
+msgstr "Не доставлять"
+
+#: src/zojax/mail/interfaces.py:143
+msgid "Disable final delivery to smtp server."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:78
+msgid "SMTP server"
+msgstr "SMTP сервер"
+
+#: src/zojax/mail/interfaces.py:79
+msgid "The address of your local SMTP (outgoing e-mail) server. Usually \"localhost\", unless you use an external server to send e-mail."
+msgstr "Это адрес вашего локального SMTP сервера (исходящая почта). Обычно \\\"localhost\\\", до тех пор пока вы не используете для отправки почты внешний сервер."
+
+#: src/zojax/mail/interfaces.py:86
+msgid "SMTP Port"
+msgstr "SMTP порт"
+
+#: src/zojax/mail/interfaces.py:87
+msgid "The port of your local SMTP (outgoing e-mail) server. Usually \"25\"."
+msgstr "Порт Вашего локального SMTP (исходящая почта) сервера. Обычно \\\"25\\\"."
+
+#: src/zojax/mail/interfaces.py:93
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: src/zojax/mail/interfaces.py:94
+msgid "Username used for optional SMTP authentication."
+msgstr "Имя пользователя для проверки Вашего почтового сервера. Является необходимым только в случае использования SMTP сервера."
+
+#: src/zojax/mail/interfaces.py:99
+msgid "Password"
+msgstr "Пароль"
+

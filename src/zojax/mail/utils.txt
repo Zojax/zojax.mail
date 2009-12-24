@@ -1,0 +1,49 @@
+==================
+Principal by email
+==================
+
+If we need get principal by email, we can use getPrincipalByEMail
+
+    >>> from zope import interface, component
+    >>> from zojax.mail.utils import getPrincipalByEMail
+
+    >>> class Principal(object):
+    ...     def __init__(self, id, email):
+    ...         self.id = id
+    ...         self.email = email
+    ...     def __repr__(self):
+    ...         return '<Principal "%s" email:%s>'%(self.id, self.email)
+
+    >>> principal1 = Principal('bob', 'bob@zojax.net')
+    >>> principal2 = Principal('bill', 'bill@zojax.net')
+
+    >>> getPrincipalByEMail('bob@zojax.net')
+    Traceback (most recent call last):
+    ...
+    PrincipalLookupError
+
+If we want enable principal lookup by email we should register
+utility IPrincipalByEMail.
+
+    >>> from zojax.mail.interfaces import IPrincipalByEMail
+    >>> class Utility(object):
+    ...     interface.implements(IPrincipalByEMail)
+    ...     
+    ...     def getPrincipal(self, email):
+    ...         if email == 'bob@zojax.net':
+    ...             return principal1
+    ...         elif email == 'bill@zojax.net':
+    ...             return principal2
+
+    >>> component.provideUtility(Utility())
+
+    >>> getPrincipalByEMail('bob@zojax.net')
+    <Principal "bob" email:bob@zojax.net>
+
+    >>> getPrincipalByEMail('bill@zojax.net')
+    <Principal "bill" email:bill@zojax.net>
+
+    >>> getPrincipalByEMail('test@zojax.net')
+    Traceback (most recent call last):
+    ...
+    PrincipalLookupError

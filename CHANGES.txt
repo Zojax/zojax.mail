@@ -1,0 +1,52 @@
+=======
+CHANGES
+=======
+
+1.0.3 (2009-05-14)
+------------------
+
+- Handle exception in send email
+
+
+1.0.2 (2009-05-13)
+------------------
+
+- Do not send auth information to SMTP server if username or password is empty
+
+- Do not use z3c.autoinclude
+
+- Update mail configlet icon
+
+- Fixed bug with tests
+
+
+1.0.1 (2008-10-22)
+------------------
+
+- Added translations: ru, nl
+
+
+1.0.0 (2008-04-23)
+------------------
+
+- Tests added
+
+
+0.12.0 (2008-04-21)
+-------------------
+
+- IPrincipalEMailService removed, added IMailAddress adapter interface instead
+
+
+0.11.0 (2008-04-14)
+-------------------
+
+- Split code
+
+- API refactoring
+
+
+0.10 (2008-02-01)
+-----------------
+
+- Initial release
