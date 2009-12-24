@@ -1,0 +1,128 @@
+# #############################################################################
+#
+# Copyright (c) 2009 Zope Foundation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+# #############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Wed Oct 22 14:19:27 2008\n"
+"PO-Revision-Date: 2008-10-14 17:25+0100\n"
+"Last-Translator: F. Kooman <fkooman@tuxed.net>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: src/zojax/mail/configure.zcml:13
+msgid "Mail settings"
+msgstr "E-mail instellingen"
+
+#: src/zojax/mail/configure.zcml:13
+msgid "Configure portal mail settings."
+msgstr "Website e-mail instellingen"
+
+#: src/zojax/mail/configure.zcml:24
+msgid "Debug settings"
+msgstr "Debug instellingen."
+
+#: src/zojax/mail/configure.zcml:24
+msgid "Configure portal mail debug settings."
+msgstr "Website e-mail debug instellingen"
+
+#: src/zojax/mail/interfaces.py:100
+msgid "Password used for optional SMTP authentication."
+msgstr "Het wachtwoord voor de optioneel SMTP- (uitgaande mail-) server."
+
+#: src/zojax/mail/interfaces.py:105
+msgid "Site 'From' name"
+msgstr "'Van' naam voor de website"
+
+#: src/zojax/mail/interfaces.py:106
+msgid "Portal generates e-mail using this name as the e-mail sender."
+msgstr "Portal genereert e-mail met deze naam als afzender."
+
+#: src/zojax/mail/interfaces.py:112
+msgid "Site 'From' address"
+msgstr "'Van' adres voor de website"
+
+#: src/zojax/mail/interfaces.py:113
+msgid ""
+"Portal generates e-mail using this address as the e-mail return address."
+msgstr "Portal genereert e-mail met dit adres als afzender."
+
+#: src/zojax/mail/interfaces.py:119
+msgid "Site 'Errors' address"
+msgstr "'Fouten' naam voor de website"
+
+#: src/zojax/mail/interfaces.py:120
+msgid ""
+"Portal generates e-mail using this address as the errors handler address."
+msgstr "Portal genereert e-mail met deze adres voor de fouten beheer."
+
+#: src/zojax/mail/interfaces.py:132
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: src/zojax/mail/interfaces.py:133
+msgid "Disable sending message."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:137
+msgid "Log messages"
+msgstr "Berichten"
+
+#: src/zojax/mail/interfaces.py:138
+msgid "Log email address and message."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:142
+msgid "No delivery"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:143
+msgid "Disable final delivery to smtp server."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:78
+msgid "SMTP server"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:79
+msgid ""
+"The address of your local SMTP (outgoing e-mail) server. Usually \"localhost"
+"\", unless you use an external server to send e-mail."
+msgstr ""
+"Dit is het adres van de lokale SMTP (uitgaande mail-) server. Meestal "
+"\"localhost\", tenzij u een externe server gebruikt om mail te versturen."
+
+#: src/zojax/mail/interfaces.py:86
+msgid "SMTP Port"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:87
+msgid "The port of your local SMTP (outgoing e-mail) server. Usually \"25\"."
+msgstr ""
+"Dit is de poort van de lokale SMTP (uitgaande e-mail) server. Meestal is dit "
+"poort \"25\"'."
+
+#: src/zojax/mail/interfaces.py:93
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: src/zojax/mail/interfaces.py:94
+msgid "Username used for optional SMTP authentication."
+msgstr "De gebruikersnaam voor de optioneel SMTP- (uitgaande mail-) server."
+
+#: src/zojax/mail/interfaces.py:99
+msgid "Password"
+msgstr "Wachtwoord"
