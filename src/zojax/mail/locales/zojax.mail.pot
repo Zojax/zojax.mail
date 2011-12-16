@@ -1,0 +1,121 @@
+##############################################################################
+#
+# Copyright (c) 2003-2004 Zope Corporation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Thu Dec  8 23:02:10 2011\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: src/zojax/mail/configure.zcml:12
+msgid "Mail settings"
+msgstr ""
+
+#: src/zojax/mail/configure.zcml:12
+msgid "Configure portal mail settings."
+msgstr ""
+
+#: src/zojax/mail/configure.zcml:23
+msgid "Debug settings"
+msgstr ""
+
+#: src/zojax/mail/configure.zcml:23
+msgid "Configure portal mail debug settings."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:100
+msgid "Password used for optional SMTP authentication."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:105
+msgid "Site 'From' name"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:106
+msgid "Portal generates e-mail using this name as the e-mail sender."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:112
+msgid "Site 'From' address"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:113
+msgid "Portal generates e-mail using this address as the e-mail return address."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:119
+msgid "Site 'Errors' address"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:120
+msgid "Portal generates e-mail using this address as the errors handler address."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:132
+msgid "Disabled"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:133
+msgid "Disable sending message."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:137
+msgid "Log messages"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:138
+msgid "Log email address and message."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:142
+msgid "No delivery"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:143
+msgid "Disable final delivery to smtp server."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:78
+msgid "SMTP server"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:79
+msgid "The address of your local SMTP (outgoing e-mail) server. Usually \"localhost\", unless you use an external server to send e-mail."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:86
+msgid "SMTP Port"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:87
+msgid "The port of your local SMTP (outgoing e-mail) server. Usually \"25\"."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:93
+msgid "Username"
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:94
+msgid "Username used for optional SMTP authentication."
+msgstr ""
+
+#: src/zojax/mail/interfaces.py:99
+msgid "Password"
+msgstr ""
+
